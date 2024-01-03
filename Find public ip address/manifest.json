@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Find your Public Ip Address",
+    "version": "1.0",
+    "description": "Find your Public Ip Address",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["Process.js"]
+        }
+      ]
+  }
